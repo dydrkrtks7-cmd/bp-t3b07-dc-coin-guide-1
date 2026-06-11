@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>등촌 코인노래방 블로그 | 혼코노 꿀팁 대방출</title>
+    <meta name="description" content="등촌에서 코인노래방 혼코노 즐기는 방법 완벽 정리. 가격, 위치, 노래 꿀팁까지 다 알려줌. 진짜 내돈내산 후기 기반.">
+    <meta name="keywords" content="등촌 코인노래방 블로그, 등촌 혼코노 후기, 등촌 노래방 꿀팁, 등촌 코인노래방 추천, 등촌 노래방 가격">
+    <link rel="canonical" href="https://t3b07-dc-coin-guide-1.vercel.app/blog">
+    <meta property="og:title" content="등촌 코인노래방 블로그 | 혼코노부터 단체까지">
+    <meta property="og:description" content="등촌 코인노래방 완벽 가이드: 혼코노 즐기는 팁, 가격, 인기 노래방 위치까지. 등촌에서 노래방 찾는다면 여기 다 있다! 친구랑, 연인이랑, 혼자서도 재밌게.">
+    <meta property="og:type" content="website">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #faf8f5;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        /* 스티키 네비게이션 */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e8e0d8;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #d4a373;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a {
+            text-decoration: none;
+            color: #4a4a5a;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #d4a373; }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #1a1a2e;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        /* 모바일 메뉴 */
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            width: 100%;
+            background: #faf8f5;
+            border-bottom: 1px solid #e8e0d8;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .mobile-menu a {
+            display: block;
+            padding: 0.8rem 1.5rem;
+            color: #4a4a5a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .mobile-menu a:hover { background: #f0ebe5; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-menu.active { display: block; }
+            .container { padding: 0 1rem; }
+        }
+        /* 히어로 영역 */
+        .hero {
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+        .hero h1 span {
+            background: linear-gradient(135deg, #d4a373, #e9c46a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #6b6b7b;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        /* 블로그 카드 */
+        .blog-section {
+            padding: 2rem 0 4rem;
+        }
+        .blog-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            border: 1px solid #e8e0d8;
+            margin-bottom: 2rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+        .blog-card .meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #8a8a9a;
+            margin-bottom: 1rem;
+        }
+        .blog-card .meta span {
+            background: #f0ebe5;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+        }
+        .blog-card h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+        .blog-card h2 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .blog-card h2 a:hover { color: #d4a373; }
+        .blog-card p {
+            color: #4a4a5a;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+        .blog-card .read-more {
+            display: inline-block;
+            color: #d4a373;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .blog-card .read-more:hover { border-bottom-color: #d4a373; }
+        /* 푸터 */
+        footer {
+            background: #1a1a2e;
+            color: #c8c8d8;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        footer p { font-size: 0.9rem; }
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .blog-card { padding: 1.8rem 1.2rem; }
+            .blog-card h2 { font-size: 1.4rem; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">🎤 등촌코노</a>
+            <div class="nav-links">
+                <a href="/">홈</a>
+                <a href="/guide">가이드</a>
+                <a href="/blog" style="color:#d4a373; font-weight:600;">블로그</a>
+                <a href="/map">지도</a>
+                <a href="tel:010-1234-5678" class="tel-link">문의</a>
+            </div>
+            <button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="/">홈</a>
+            <a href="/guide">가이드</a>
+            <a href="/blog">블로그</a>
+            <a href="/map">지도</a>
+            <a href="tel:010-1234-5678">문의</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>등촌 코인노래방 <span>블로그</span></h1>
+                <p>혼코노부터 단체까지, 등촌에서 코인노래방 즐기는 모든 꿀팁을 진짜 내돈내산 후기로 풀어드림. 가격, 위치, 노래 추천까지 다 있음.</p>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+                <article class="blog-card">
+                    <div class="meta">
+                        <span>혼코노</span>
+                        <span>등촌</span>
+                        <span>2025.01.15</span>
+                    </div>
+                    <h2><a href="#">등촌 코인노래방 혼코노 완벽 가이드: 나 혼자 노래방 가면 생기는 일</a></h2>
+                    <p>야, 솔직히 말해서 혼자 노래방 가는 거 처음엔 좀 쫄렸어. 근데 등촌 코인노래방 가보니까 완전 꿀이더라. 시간당 3,000원에 리모콘으로 바로바로 신곡 추가되고, 방음도 개좋아서 내가 어떤 망가지는 소리를 질러도 아무도 신경 안 씀. 진짜 혼코노의 신세계를 경험했어. 내가 방문한 곳은 등촌역 3번 출구에서 도보 3분 거리에 있는 '코인킹'인데, 방이 넓직하고 마이크도 두 개라서 혼자서 듀엣 연습하기도 좋더라. 꿀팁 하나 알려줌: 오후 2시에서 5시 사이에 가면 거의 텅텅 비어서 내가 왕인 기분 느낄 수 있음. 가격은 1곡에 500원, 30분에 3,000원, 1시간에 5,000원. 완전 합리적이지? 게다가 사장님이 엄청 친절해서 처음 혼코노 도전하는 사람도 편하게 이용할 수 있어. 나는 여기서 '김범수 - 보고싶다'랑 '아이유 - 밤편지' 불렀는데, 방음이 진짜 좋아서 맘껏 발라드 질러도 민망하지 않더라. 등촌에서 혼코노 생각한다면 강추다.</p>
+                    <a href="#" class="read-more">전체보기 →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="meta">
+                        <span>단체</span>
+                        <span>이벤트</span>
+                        <span>2025.01.10</span>
+                    </div>
+                    <h2><a href="#">등촌 코인노래방 단체로 가면 개꿀인 이유: 친구랑 4명이서 2시간 논 후기</a></h2>
+                    <p>지난주에 친구들이랑 등촌에서 모였는데, 다들 노래방 가고 싶다길래 '코인노래방' 한 번 가보자 해서 갔어. 근데 이게 왠일? 일반 노래방보다 훨씬 재밌더라. 우리는 '코인스타'라는 곳 갔는데, 여기는 방이 진짜 크고 소파도 푹신해서 6명도 거뜬히 들어감. 4명이서 2시간 했는데 8,000원 밖에 안 나옴. 1인당 2,000원 꼴이야. 게다가 신곡도 엄청 많고, 리모콘으로 음악방송도 볼 수 있어서 분위기 UP. 문제는 한 가지: 너무 재밌어서 시간 가는 줄 몰랐다는 거. 꿀팁: 미리 노래 리스트 만들어가면 시간 낭비 없음. 나는 '에스파 - Supernova'랑 '데이식스 - Welcome to the Show' 준비해갔는데, 친구들이 다 같이 떼창하니까 진짜 신났음. 등촌에서 단체로 놀기 딱 좋은 장소야.</p>
+                    <a href="#" class="read-more">전체보기 →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="meta">
+                        <span>팁</span>
+                        <span>가격</span>
+                        <span>2025.01.05</span>
+                    </div>
+                    <h2><a href="#">등촌 코인노래방 가격 비교: 돈 아끼는 꿀팁 5가지</a></h2>
+                    <p>등촌에서 코인노래방 여러 군데 가봤는데, 가격이 천차만별이더라. 내가 직접 발로 뛰어서 비교해봤음. '코인킹'은 1곡 500원, 30분 3,000원, 1시간 5,000원. '코인스타'는 1곡 600원, 30분 3,500원, 1시간 6,000원. '노래팡'은 1곡 400원, 30분 2,500원, 1시간 4,500원. 근데 노래팡은 방이 좁고 마이크 상태가 좀 별로였어. 개인적으로 가성비는 코인킹이 최고. 사람이 많으면 코인스타도 괜찮고. 돈 아끼는 꿀팁: 점심 시간대(12-2시)에 가면 1시간에 3,500원까지 할인하는 곳도 있음. 그리고 앱으로 예약하면 첫 방문 500원 할인 쿠폰 주는 곳도 있으니 꼭 확인해봐. 나는 항상 30분짜리 두 번 끊어서 쓰는데, 중간에 쉬면서 물도 마시고 하니까 더 좋더라. 등촌에서 코인노래방 가려면 이 팁들 꼭 기억해!</p>
+                    <a href="#" class="read-more">전체보기 →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 등촌 코인노래방 가이드 | 혼코노도 즐겁게, 다함께도 신나게</p>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 메뉴 외부 클릭 시 닫기
+        document.addEventListener('click', function(e) {
+            const menu = document.querySelector('.mobile-menu');
+            const hamburger = document.querySelector('.hamburger');
+            if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
